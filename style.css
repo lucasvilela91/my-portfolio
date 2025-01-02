@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', serif;
+}
+
+/* navbar */
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 15px 10px;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+}
+
+.navbar-container .logo img {
+  height: auto;
+  width: 150px;
+  margin-left: 170px;
+}
+.navbar-container > ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-container > ul > li {
+  position: relative; /* Necessário para o uso do ::after */
+  text-transform: uppercase;
+  margin-right: 40px;
+  color: #000000;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  opacity: 65%;
+  transition: opacity 0.3s;
+}
+.navbar-container > ul > li::after {
+  content: ''; /* Adiciona um elemento vazio */
+  position: absolute;
+  bottom: -5px; /* Ajuste conforme o espaço abaixo do texto */
+  left: 0;
+  width: 0; /* Inicialmente, a borda é invisível */
+  height: 2px; /* Espessura da borda */
+  background-color: #3a0764; /* Cor da borda */
+  transition: width 0.3s ease; /* Suaviza o crescimento */
+}
+
+.navbar-container > ul > li:hover {
+  opacity: 100%;
+  color: #3a0764;
+  cursor: pointer;
+}
+
+.navbar-container > ul > li:hover::after {
+  width: 90%; /* Faz a borda crescer para o tamanho total do texto */
+}
+
+/* showcase */
+.showcase-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: #ffffff;
+  background-image: url(./images/background-image.jpg);
+  background-size: cover;
+
+  /* Overlay */
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: color;
+}
+
+.showcase-container > h1 {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.showcase-container p {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+  padding: 0px 8px 8px 8px;
+  letter-spacing: 0.15rem;
+}
