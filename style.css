@@ -8,6 +8,7 @@
 /* navbar */
 .navbar-container {
   width: 100%;
+  height: 75px;
   display: flex;
   justify-content: space-between;
   background: #ffffff;
@@ -18,9 +19,10 @@
 }
 
 .navbar-container .logo img {
-  height: auto;
-  width: 150px;
-  margin-left: 170px;
+  width: 200px; /* Define a largura da logo */
+  height: auto; /* Mantém a proporção original */
+  max-width: 100%; /* Garante que a logo não ultrapasse o contêiner */
+  margin-left: 195px;
 }
 .navbar-container > ul {
   display: flex;
@@ -63,12 +65,11 @@
 .showcase-container {
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: black;
   color: #ffffff;
-  background-image: url(./images/background-image.jpg);
+  background-image: url(./images/bg-dark.jpg);
   background-size: cover;
 
   /* Overlay */
@@ -76,18 +77,99 @@
   background-blend-mode: color;
 }
 
-.showcase-container > h1 {
+.showcase-container-box > h1 {
   font-family: 'Heebo', sans-serif;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3rem;
+  width: 300px;
+  margin-right: 350px;
 }
-
+.showcase-container-box > h1 > strong {
+  font-family: 'Inter', serif;
+  font-weight: 800;
+  border-bottom: 2.5px solid transparent;
+  border-image: linear-gradient(90deg, #a755f7, #fd69ba) 1;
+}
+.span-title {
+  background: linear-gradient(90deg, #a755f7, #fd69ba); /* Gradiente */
+  -webkit-background-clip: text; /* Para aplicar o gradiente no texto */
+  color: transparent;
+}
 .showcase-container p {
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.8);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
   padding: 0px 8px 8px 8px;
   letter-spacing: 0.15rem;
+}
+
+.about-me-content {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.about-me-content img {
+  width: 320px;
+  height: 320px;
+  margin-right: 50px;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px); /* Sobe 10px */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.about-me-content p {
+  color: #0f0f0f;
+  font-weight: 400;
+  line-height: 1.6rem;
+  font-size: 1.15rem;
+}
+
+/* utilities */
+.section-container {
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.section-content {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 0.15rem;
+  color: #0c0038;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-bottom: 1.5px solid #0c0038;
+  line-height: 2.5rem;
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-gray {
+  background-color: #efeef0;
 }
