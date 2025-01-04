@@ -6,7 +6,7 @@
 }
 
 /* navbar */
-.navbar-container {
+.fixed-header {
   width: 100%;
   height: 75px;
   display: flex;
@@ -15,21 +15,32 @@
   padding: 15px 10px;
   align-items: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  position: absolute;
+  position: fixed;
+  z-index: 1000;
+  box-shadow: 0px 4px 2px -2px gray; /* Adiciona uma sombra para destaque */
+}
+.border {
+  position: absolute; /* Define a posição absoluta */
+  bottom: 0; /* Alinha a borda com a parte inferior da header */
+  left: 0; /* Encosta a borda no lado esquerdo da tela */
+  height: 3.5px; /* Espessura da borda */
+  background-color: #653fff;
+  width: 0;
+  transition: width 0.5s;
 }
 
-.navbar-container .logo img {
+.fixed-header .logo img {
   width: 200px; /* Define a largura da logo */
   height: auto; /* Mantém a proporção original */
   max-width: 100%; /* Garante que a logo não ultrapasse o contêiner */
   margin-left: 195px;
 }
-.navbar-container > ul {
+
+.fixed-header > ul {
   display: flex;
   list-style: none;
 }
-
-.navbar-container > ul > li {
+.fixed-header > ul > li {
   position: relative; /* Necessário para o uso do ::after */
   text-transform: uppercase;
   margin-right: 40px;
@@ -40,7 +51,8 @@
   opacity: 65%;
   transition: opacity 0.3s;
 }
-.navbar-container > ul > li::after {
+
+.fixed-header > ul > li::after {
   content: ''; /* Adiciona um elemento vazio */
   position: absolute;
   bottom: -5px; /* Ajuste conforme o espaço abaixo do texto */
@@ -51,13 +63,13 @@
   transition: width 0.3s ease; /* Suaviza o crescimento */
 }
 
-.navbar-container > ul > li:hover {
+.fixed-header > ul > li:hover {
   opacity: 100%;
   color: #3a0764;
   cursor: pointer;
 }
 
-.navbar-container > ul > li:hover::after {
+.fixed-header > ul > li:hover::after {
   width: 90%; /* Faz a borda crescer para o tamanho total do texto */
 }
 
@@ -108,7 +120,6 @@
 .about-me-content {
   display: flex;
   align-items: center;
-  margin-top: 50px;
 }
 
 .about-me-content img {
@@ -139,9 +150,11 @@
 
 /* habilidades */
 .skill-content {
-  margin-top: 100px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanho igual */
+  grid-template-rows: repeat(3, auto); /* 3 linhas automáticas */
+  gap: 20px; /* Espaçamento entre os itens */
+  margin-top: 20px;
 }
 
 .skill-item {
@@ -153,9 +166,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex: 1; /* Distribui igualmente o espaço entre os itens */
-  margin: 0 10px; /* Espaçamento entre os itens */
-  max-width: 450px; /* Limite de largura máxima */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  height: 360px;
+  width: 90%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
 }
 
 .skill-item h4 {
@@ -171,11 +190,6 @@
   font-size: 0.875rem;
 }
 
-.skill-content .skill-item:nth-child(2) {
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
 .skill-content > .skill-item > img {
   width: 200px;
   height: 200px;
@@ -185,7 +199,7 @@
 .section-container {
   width: 100%;
   padding-top: 120px;
-  padding-bottom: 80px;
+  padding-bottom: 160px;
 }
 
 .section-content {
@@ -209,6 +223,7 @@
   text-align: center;
   width: fit-content;
   margin: auto;
+  margin-bottom: 100px;
 }
 
 .bg-white {
