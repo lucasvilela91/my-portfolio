@@ -5,6 +5,10 @@
   font-family: 'Inter', serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* navbar */
 .fixed-header {
   width: 100%;
@@ -292,6 +296,35 @@
   margin-top: 20px;
 }
 
+/* footer */
+
+.footer-container {
+  width: 100%;
+  background-color: #002d62;
+  color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  align-items: center;
+}
+
+.footer-container img {
+  width: 200px; /* Define a largura da logo */
+  height: auto; /* Mantém a proporção original */
+  max-width: 100%; /* Garante que a logo não ultrapasse o contêiner */
+  margin-left: 195px;
+}
+.footer-container .social-items i {
+  margin-right: 25px;
+  color: rgba(255, 255, 255, 0.75);
+  transition: transform 0.3s ease, color 0.3s ease; /* Transição suave de 0.3s */
+}
+
+.footer-container .social-items i:hover {
+  cursor: pointer;
+  transform: scale(1.2); /* Aumenta o tamanho do ícone */
+  color: #ffffff; /* Troca a cor do ícone */
+}
 /* utilities */
 
 .section-container {
@@ -332,7 +365,7 @@
   background-color: #efeef0;
 }
 
-.bg-purple {
+.bg-projects {
   background: linear-gradient(135deg, #32234c 0%, #0a1a36 50%, #000000 100%);
 }
 
