@@ -541,7 +541,113 @@
               </a>
             </div>
           </div>
+
+          <div class="projects-item">
+            <!-- imagem -->
+            <img src="./images/low-code.png" alt="Projeto mobile fist" />
+
+            <!-- titulo - texto -->
+            <div class="project-text">
+              <h3>Primeiro Site em Low Code</h3>
+              <p>
+                Este projeto foi desenvolvido com a tecnologia Bubble, uma
+                plataforma low-code que permite criar aplicativos web com pouco
+                ou nenhum código. Utilizando essa ferramenta, construí meu
+                primeiro site, o que foi uma ótima experiência para aprender
+                sobre design e funcionalidade sem a necessidade de codificação
+                extensiva.
+              </p>
+              <a
+                href="https://lucasvilelapersonal.bubbleapps.io/version-test"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="tag-a-button"
+              >
+                Veja
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <div class="section-container bg-gray">
+      <div class="section-content">
+        <h2 class="section-title">Entre em contato</h2>
+
+        <form class="contact-form bg-white">
+          <label for="nome" class="form-label">Nome*</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Nome"
+            required
+            class="input-field"
+          />
+
+          <label for="email" class="form-label">Email*</label>
+          <input
+            type="email"
+            name=""
+            id="email"
+            placeholder="Email"
+            required
+            class="input-field"
+          />
+
+          <label for="telefone" class="form-label">Celular</label>
+          <input
+            class="input-field"
+            maxlength="256"
+            name="telefone"
+            data-name="Telefone"
+            placeholder="+55 (xx) 12345-6789"
+            type="tel"
+            id="telefone"
+          />
+
+          <label for="motivo-do-contato" class="form-label"
+            >Motivo do contato*</label
+          >
+          <select
+            id="motivo-do-contato"
+            name="motivo-do-contato"
+            data-name="Motivo Do Contato"
+            required=""
+            class="input-field"
+          >
+            <option value="">Selecione um</option>
+            <option value="Quero contratar você">Quero contratar você</option>
+            <option value="Duvidas">Duvídas</option>
+            <option value="Outro motivo">Outro motivo</option>
+          </select>
+
+          <div class="form-label">Como prefere ser contatado?*</div>
+
+          <label>
+            <input type="radio" name="option" value="WhatsApp" required />
+            WhatsApp </label
+          ><br />
+
+          <label>
+            <input type="radio" name="option" value="Email" required /> Email
+          </label>
+
+          <label for="mensagem" class="form-label mensagem">Mensagem*</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            maxlength="5000"
+            data-name="Mensagem"
+            placeholder="Descreva com detalhes sua mensagem"
+            required=""
+            class="input-field"
+            spellcheck="false"
+          ></textarea>
+
+          <input type="submit" class="button" value="Enviar" />
+        </form>
       </div>
     </div>
   </body>

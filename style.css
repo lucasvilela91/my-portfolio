@@ -207,7 +207,19 @@
 .projects-item {
   display: flex;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 120px;
+}
+
+/* deixando de forma alternada os projetos */
+.projects-content .projects-item:nth-child(2n) {
+  text-align: right;
+}
+.projects-content .projects-item:nth-child(2n) > img {
+  order: 2;
+}
+
+.projects-content .projects-item:nth-child(2n) > p {
+  order: 1;
 }
 
 .projects-item > img {
@@ -226,7 +238,7 @@
 .projects-item p {
   color: #ffffff;
   opacity: 75%;
-  line-height: 1.35rem;
+  line-height: 1.5rem;
   margin-bottom: 25px;
 }
 
@@ -236,6 +248,50 @@
   font-weight: 500;
   margin-bottom: 45px;
 }
+/* formulário */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #653fff;
+}
+
+/* Estilo dos campos de entrada */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Hover e focus */
+.input-field:hover,
+.input-field:focus {
+  outline: 0.5px solid #021595;
+  box-shadow: 0 0 5px rgba(135, 206, 250, 0.5);
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.mensagem {
+  margin-top: 20px;
+}
+
 /* utilities */
 
 .section-container {
@@ -294,10 +350,32 @@
   cursor: pointer;
   border-radius: 8px;
   border: none;
-  margin-top: 16px;
+  margin-top: 10px;
   color: #ffffff;
+  text-align: center;
+  font-weight: 500;
 }
 .tag-a-button:hover {
+  color: #ffffff;
+  background-color: #7d22ce;
+  transform: translateY(-2px);
+  transition: 0.3s ease-in;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #9233ea;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  margin-top: 10px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+}
+.button:hover {
   color: #ffffff;
   background-color: #7d22ce;
   transform: translateY(-2px);
