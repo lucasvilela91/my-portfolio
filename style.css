@@ -38,13 +38,14 @@ a {
   height: auto; /* Mantém a proporção original */
   max-width: 100%; /* Garante que a logo não ultrapasse o contêiner */
   margin-left: 195px;
+  cursor: pointer;
 }
 
 .fixed-header > ul {
   display: flex;
   list-style: none;
 }
-.fixed-header > ul > li {
+.fixed-header > ul > li > a {
   position: relative; /* Necessário para o uso do ::after */
   text-transform: uppercase;
   margin-right: 40px;
@@ -56,7 +57,7 @@ a {
   transition: opacity 0.3s;
 }
 
-.fixed-header > ul > li::after {
+.fixed-header > ul > li > a::after {
   content: ''; /* Adiciona um elemento vazio */
   position: absolute;
   bottom: -5px; /* Ajuste conforme o espaço abaixo do texto */
@@ -67,13 +68,13 @@ a {
   transition: width 0.3s ease; /* Suaviza o crescimento */
 }
 
-.fixed-header > ul > li:hover {
+.fixed-header > ul > li > a:hover {
   opacity: 100%;
   color: #3a0764;
   cursor: pointer;
 }
 
-.fixed-header > ul > li:hover::after {
+.fixed-header > ul > li > a:hover::after {
   width: 90%; /* Faz a borda crescer para o tamanho total do texto */
 }
 
@@ -308,12 +309,19 @@ a {
   align-items: center;
 }
 
-.footer-container img {
+.footer-container .logo img {
   width: 200px; /* Define a largura da logo */
   height: auto; /* Mantém a proporção original */
   max-width: 100%; /* Garante que a logo não ultrapasse o contêiner */
   margin-left: 195px;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
+.footer-container .logo img:hover {
+  content: url(./images/logo-white.svg);
+  transform: scale(1.05);
+}
+
 .footer-container .social-items i {
   margin-right: 25px;
   color: rgba(255, 255, 255, 0.75);

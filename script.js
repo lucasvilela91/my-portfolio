@@ -38,3 +38,30 @@ window.addEventListener('scroll', function () {
   let scrollPercentage = (scrollPosition / documentHeight) * 100;
   border.style.width = scrollPercentage + '%';
 });
+
+// scroll
+
+const menuItems = document.querySelectorAll('.fixed-header ul li a, .logo a');
+
+menuItems.forEach((item) => {
+  item.addEventListener('click', function (e) {
+    e.preventDefault(); // Impede o comportamento padrão do link
+
+    const targetID = this.getAttribute('href');
+    const targetSection = document.querySelector(targetID);
+
+    targetSection.scrollIntoView({
+      behavior: 'smooth',
+    });
+  });
+});
+
+//Recarregar a const logo = document.querySelector('.logo img');
+
+const logos = document.querySelectorAll('.logo img'); // Seleciona todas as imagens dentro de .logo
+
+logos.forEach((logo) => {
+  logo.addEventListener('click', function () {
+    window.location.href = '../index.html'; // Recarrega a página
+  });
+});
