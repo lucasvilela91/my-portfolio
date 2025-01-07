@@ -312,7 +312,7 @@ a {
   width: 200px; /* Define a largura da logo */
   height: auto; /* Mantém a proporção original */
   max-width: 100%; /* Garante que a logo não ultrapasse o contêiner */
-  margin-left: 195px;
+  margin-left: 120px;
   cursor: pointer;
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -401,7 +401,7 @@ a {
 .section-container {
   width: 100%;
   padding-top: 120px;
-  padding-bottom: 160px;
+  padding-bottom: 50px;
 }
 
 .section-content {
