@@ -73,7 +73,7 @@
   .projects-item {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 0px;
+    margin-bottom: 40px;
   }
 
   .projects-content .projects-item:nth-child(2n) {
@@ -95,21 +95,20 @@
 
   .project-text {
     margin-left: 0;
-    max-width: 100%;
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
 
   .projects-item p {
     line-height: 1.25rem;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     font-size: 1rem;
   }
 
   .projects-item h3 {
     font-size: 1.5rem;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
 
   /* footer */
