@@ -598,7 +598,7 @@
       <div class="section-content">
         <h2 class="section-title">Entre em contato</h2>
 
-        <form class="contact-form bg-white">
+        <form class="contact-form bg-white" action="https://formsubmit.co/lucasvilelapersonal@gmail.com" method="POST">
           <label for="nome" class="form-label">Nome*</label>
           <input
             type="text"
@@ -668,6 +668,10 @@
             class="input-field"
             spellcheck="false"
           ></textarea>
+          
+          <input type="hidden" name="_captcha" value="false">
+
+          <input type="hidden" name="_next" value="http://lucasvilela.vercel.app/thanks.html">
 
           <input type="submit" class="button" value="Enviar" />
         </form>

@@ -1,0 +1,22 @@
+@media (max-width: 1024px) {
+  .fixed-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fixed-header .logo img {
+    margin-left: 0;
+  }
+
+  .showcase-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .showcase-container-box h1 {
+    font-size: 2.5rem;
+  }
+}

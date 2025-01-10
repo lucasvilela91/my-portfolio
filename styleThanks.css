@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* navbar */
+.fixed-header {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 15px 10px;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  z-index: 1000;
+  box-shadow: 0px 4px 2px -2px gray; /* Adiciona uma sombra para destaque */
+}
+.border {
+  position: absolute; /* Define a posição absoluta */
+  bottom: 0; /* Alinha a borda com a parte inferior da header */
+  left: 0; /* Encosta a borda no lado esquerdo da tela */
+  height: 3.5px; /* Espessura da borda */
+  background-color: #653fff;
+  width: 0;
+  transition: width 0.5s;
+}
+
+.fixed-header .logo img {
+  width: 200px; /* Define a largura da logo */
+  height: auto; /* Mantém a proporção original */
+  max-width: 100%; /* Garante que a logo não ultrapasse o contêiner */
+  margin-left: 195px;
+  cursor: pointer;
+}
+
+.showcase-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-image: url(./images/bg-dark.jpg);
+  background-size: cover;
+  background-position: center;
+
+  /* Overlay */
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: color;
+}
+
+.showcase-container-box > h1 {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  width: 100%;
+}
+
+.section-container {
+  width: 100%;
+}
+
+.section-content {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
