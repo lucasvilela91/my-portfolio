@@ -65,3 +65,11 @@ logos.forEach((logo) => {
     window.location.href = '../index.html'; // Recarrega a página
   });
 });
+
+// ano atual
+const currentYear = () => {
+  const anoAtual = new Date().getFullYear();
+  document.getElementById('currentYear').innerText = anoAtual;
+};
+
+currentYear(); // Chame a função

@@ -1,0 +1,104 @@
+.fixed-header {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 15px 10px;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0px 4px 2px -2px gray; /* Adiciona uma sombra para destaque */
+  }
+  .border {
+    position: absolute; /* Define a posição absoluta */
+    bottom: 0; /* Alinha a borda com a parte inferior da header */
+    left: 0; /* Encosta a borda no lado esquerdo da tela */
+    height: 3.5px; /* Espessura da borda */
+    background-color: #653fff;
+    width: 0;
+    transition: width 0.5s;
+  }
+  
+  .fixed-header .logo img {
+    width: 200px; /* Define a largura da logo */
+    height: auto; /* Mantém a proporção original */
+    max-width: 100%; /* Garante que a logo não ultrapasse o contêiner */
+    margin-left: 195px;
+    cursor: pointer;
+  }
+  
+  .fixed-header > ul {
+    display: flex;
+    list-style: none;
+  }
+  .fixed-header > ul > li > a {
+    position: relative; /* Necessário para o uso do ::after */
+    text-transform: uppercase;
+    margin-right: 40px;
+    color: #000000;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    opacity: 65%;
+    transition: opacity 0.3s;
+  }
+  
+  .fixed-header > ul > li > a::after {
+    content: ''; /* Adiciona um elemento vazio */
+    position: absolute;
+    bottom: -5px; /* Ajuste conforme o espaço abaixo do texto */
+    left: 0;
+    width: 0; /* Inicialmente, a borda é invisível */
+    height: 2px; /* Espessura da borda */
+    background-color: #3a0764; /* Cor da borda */
+    transition: width 0.3s ease; /* Suaviza o crescimento */
+  }
+  
+  .fixed-header > ul > li > a:hover {
+    opacity: 100%;
+    color: #3a0764;
+    cursor: pointer;
+  }
+  
+  .fixed-header > ul > li > a:hover::after {
+    width: 90%; /* Faz a borda crescer para o tamanho total do texto */
+  }
+}
+
+@media (max-width: 1024px) {
+  .fixed-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fixed-header > ul {
+    display: none;
+  }
+
+  .fixed-header .logo img {
+    margin-left: 0;
+  }
+  .showcase-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .fixed-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fixed-header > ul {
+    display: none;
+  }
+
+  .fixed-header .logo img {
+    margin-left: 0;
+  }
+}

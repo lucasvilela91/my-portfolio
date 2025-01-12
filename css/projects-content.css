@@ -1,0 +1,149 @@
+.projects-content {
+  margin-top: 120px;
+}
+
+.projects-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+/* deixando de forma alternada os projetos */
+.projects-content .projects-item:nth-child(2n) {
+  text-align: right;
+}
+.projects-content .projects-item:nth-child(2n) > img {
+  order: 2;
+}
+
+.projects-content .projects-item:nth-child(2n) > p {
+  order: 1;
+}
+
+.projects-item > img {
+  width: 40%;
+  height: 300px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  margin-left: 60px;
+}
+
+.project-text {
+  margin-left: 60px;
+  max-width: 600px;
+}
+
+.projects-item p {
+  color: #ffffff;
+  opacity: 75%;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.projects-item h3 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 45px;
+}
+
+@media (max-width: 1024px) {
+  .projects-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .projects-item {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .projects-content .projects-item:nth-child(2n) {
+    text-align: center;
+  }
+  .projects-content .projects-item:nth-child(2n) > img {
+    order: 0;
+  }
+
+  .projects-content .projects-item:nth-child(2n) > p {
+    order: 0;
+  }
+
+  .projects-item > img {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+
+  .project-text {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .projects-item p {
+    line-height: 1.25rem;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .projects-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .projects-item {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .projects-content .projects-item:nth-child(2n) {
+    text-align: center;
+  }
+  .projects-content .projects-item:nth-child(2n) > img {
+    order: 0;
+  }
+
+  .projects-content .projects-item:nth-child(2n) > p {
+    order: 0;
+  }
+
+  .projects-item > img {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+
+  .project-text {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .projects-item p {
+    line-height: 1.25rem;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .projects-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+}

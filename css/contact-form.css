@@ -1,3 +1,45 @@
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #653fff;
+}
+
+/* Estilo dos campos de entrada */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Hover e focus */
+.input-field:hover,
+.input-field:focus {
+  outline: 0.5px solid #021595;
+  box-shadow: 0 0 5px rgba(135, 206, 250, 0.5);
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.mensagem {
+  margin-top: 20px;
+}
 @media (max-width: 1024px) {
   .fixed-header {
     display: flex;
