@@ -19,7 +19,7 @@ const textsEn = [
 ];
 
 // Verifica se está na página em português ou inglês
-const texts = window.location.pathname.includes('index-pt.html')
+const texts = window.location.pathname.includes('index.html')
   ? textsPt
   : textsEn;
 

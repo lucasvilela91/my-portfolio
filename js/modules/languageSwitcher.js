@@ -1,5 +1,5 @@
 export const switchToPortuguese = () => {
-  window.location.href = 'index-pt.html';
+  window.location.href = 'index.html';
 };
 
 export const switchToEnglish = () => {
