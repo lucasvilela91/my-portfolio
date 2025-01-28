@@ -67,11 +67,31 @@
   }
 }
 
-@media (max-width: 1024px) {
+.language-switcher {
+  width: auto; /* Para evitar limitação de espaço */
+  display: flex;
+  justify-content: flex-end; /* Centraliza as bandeiras */
+  align-items: center;
+}
+
+.flag {
+  width: auto;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin: 0 8px; /* Adiciona margem lateral */
+}
+
+.flag:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1157px) {
   .fixed-header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 450px;
   }
 
   .fixed-header > ul {
@@ -87,11 +107,13 @@
   }
 }
 
+
 @media (max-width: 768px) {
   .fixed-header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 50px;
   }
 
   .fixed-header > ul {

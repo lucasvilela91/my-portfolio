@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Language" content="pt-br" />
+
+ <!-- SEO Essentials -->
+ <title>Lucas Vilela - Transformando ideias em código.</title>
+ <meta name="description" content="Confira o portfólio de Lucas Vilela, desenvolvedor web focado em tecnologias como HTML, CSS, JavaScript, React e Swift. Veja meus projetos e entre em contato!" />
+ <meta name="robots" content="index, follow" />
+ <link rel="canonical" href="https://lucasvilela.vercel.app/" />
+ <meta name="keywords" content="Lucas Vilela, Portfólio, Desenvolvedor Web, HTML, CSS, JavaScript, React, Swift, Front-End, Back-end, Full stack, Programação" />
+
+
+
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Inter:opsz,wght@14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+
+    <script
+      src="https://kit.fontawesome.com/dba395ade7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="module" src="./js/main.js" defer></script>
+  </head>
+
+  
+  <nav class="fixed-header">
+    <div class="logo">
+      <img src="./assets/svg/logo.svg" alt="Logo" />
+    </div>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contatos">Contatos</a></li>
+      </ul>
+      <div class="language-switcher">
+        <img src="./assets/svg/brazil.svg" alt="Português" id="pt-br" class="flag" />
+        <img src="./assets/svg/eua.svg" alt="English" id="en-us" class="flag" />
+    </div>
+      <div class="border" id="border"></div>
+    </nav>
+    
+    <div class="whatsapp-button">
+      <a href="https://wa.me/+5535991463033" target="_blank">
+        <img src="./assets/images/whatsapp.png" alt="whatsapp" />
+      </a>
+    </div>
+    <body>
+    
+    <div class="showcase-container" id="inicio">
+      <div class="showcase-container-box">
+        <h1>
+          Revolucionando o <strong>futuro</strong> com <br /><span
+            class="span-title"
+          ></span>
+      </div>     
+      <p>Transformando ideias em <strong>código.</strong></p>
+    </div>
+
+    <!-- SOBRE MIM -->
+    <div class="section-container bg-white" id="sobre">
+      <div class="section-content">
+        <h2 class="section-title">Sobre mim</h2>
+
+        <div class="about-me-content">
+          <img src="./assets/svg/avatar-linkedin.svg" alt="Lucas Vilela" />
+          <div class="text-content">
+            <p>
+              Olá! Meu nome é <strong>Lucas Vilela</strong>, sou estudante de <strong>Engenharia da Computação</strong> - Bacharelado e apaixonado por <strong>tecnologia</strong> desde criança. Minha jornada começou com um <strong>Super Nintendo</strong>, onde passei horas explorando mundos no clássico <strong>Super Mario World</strong>.
+              Quando ganhei meu primeiro <strong>computador</strong>, compartilhava o tempo de uso com meu irmão.
+              Juntos, aprendemos a explorar cada funcionalidade, e cada descoberta era uma experiência <strong>incrível</strong> e marcante.
+            </p>
+        
+            <p>
+              Tenho experiência em <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>, e estou me aprofundando em bibliotecas como <strong>React</strong>. Além disso, estou expandindo meus conhecimentos no <strong>desenvolvimento mobile</strong> com <strong>Swift</strong>, buscando criar <strong>aplicativos</strong> que ofereçam experiências incríveis em diferentes plataformas.
+            </p>
+        
+            <p>
+              Atualmente, estou focado em adquirir mais experiência prática por meio de <strong>projetos</strong> que envolvem a criação de <strong>aplicações web</strong> e <strong>mobile</strong>. Em cada projeto, aplico conceitos de <strong>usabilidade</strong>, boas práticas de <strong>programação</strong> e <strong>colaboração</strong>.
+            </p>
+        
+            <p>
+              Gosto de trabalhar em <strong>equipe</strong> e acredito que o <strong>compartilhamento de ideias</strong> e experiências é essencial para o sucesso de qualquer projeto.<br>
+              Sou <strong>curioso</strong>, <strong>dedicado</strong> e acredito que a <strong>tecnologia</strong> é uma poderosa ferramenta para transformar o mundo.
+            </p>
+            <p>Vamos construir o <strong>futuro</strong> juntos?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-container bg-gray" id="habilidades">
+      <div class="section-content">
+        <h2 class="section-title">Habilidades</h2>
+
+        <div class="skill-content">
+          <div class="skill-item">
+            <img src="./assets/images/html.png" alt="Logo Html5" />
+            <h4>html5</h4>
+            <p>
+              HTML, ou HyperText Markup Language, é uma linguagem de marcação
+              que permite criar a estrutura básica de uma página web.
+            </p>
+          </div>
+
+          <div class="skill-item">
+            <img src="./assets/images/css.png" alt="Logo Css3" />
+            <h4>css3</h4>
+            <p>
+              CSS (Cascading Style Sheets) é uma linguagem de estilo que permite
+              formatar a aparência de páginas web escritas em HTML ou XML.
+            </p>
+          </div>
+
+          <div class="skill-item">
+            <img src="./assets/images/javascript.png" alt="Logo Javascript" />
+            <h4>javascript</h4>
+            <p>
+              JavaScript permite criar páginas interativas na internet,
+              aplicativos e sistemas online. É uma das tecnologias principais da
+              World Wide Web.
+            </p>
+          </div>
+
+          <div class="skill-item">
+            <img src=".//assets/images/typescript.png" alt="Logo Typescript" />
+            <h4>typescript</h4>
+            <p>
+              TypeScript é um superconjunto de JavaScript que adiciona recursos
+              de tipagem estática opcional, facilitando a criação de código mais
+              robusto.
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-content">
+          <div class="skill-item">
+            <img src="./assets/images/nodejs.png" alt="Logo Node.js" />
+            <h4>node.js</h4>
+            <p>
+              Node.js é um ambiente de execução de JavaScript que permite
+              executar código JavaScript no lado do servidor. Node.js é
+              construído sobre o motor V8 do Google Chrome.
+            </p>
+          </div>
+
+          <div class="skill-item">
+            <img src="./assets/images/react.png" alt="Logo React" />
+            <h4>react</h4>
+            <p>
+              React é uma biblioteca JavaScript open-source que serve para criar
+              interfaces de usuário (UI) em aplicativos web, foi desenvolvida
+              por uma equipe do Facebook.
+            </p>
+          </div>
+
+          <div class="skill-item">
+            <img src="./assets/images/tailwind-css.png" alt="Logo Tailwind css" />
+            <h4>tailwind css</h4>
+            <p>
+              É um framework de estilo CSS que fornece classes pré-definidas para estilizar páginas web.
+            </p>
+          </div>
+
+          <div class="skill-item">
+            <img src="./assets/images/swift.png" alt="Logo Swift" />
+            <h4>swift</h4>
+            <p>
+              Swift é uma linguagem de programação poderosa e intuitiva da Apple
+              para iOS, macOS, watchOS e tvOS.
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-content">
+          <div class="skill-item">
+            <img src="./assets/images/git.png" alt="Logo Git" />
+            <h4>git</h4>
+            <p>
+              O Git é uma ferramenta de código aberto e gratuita para controlar
+              alterações no código-fonte durante o desenvolvimento de software.
+              Ele é um sistema de controle de versão.
+            </p>
+          </div>
+
+          <div class="skill-item">
+            <img src="./assets/images/github.png" alt="Logo github" />
+            <h4>github</h4>
+            <p>
+              É uma plataforma de desenvolvimento colaborativo que permite
+              armazenar, compartilhar e trabalhar em projetos.
+            </p>
+          </div>
+
+          <div class="skill-item">
+            <img src="./assets/images/mysql.png" alt="Logo Mysql" />
+            <h4>mysql</h4>
+            <p>
+              MySQL é um sistema de gerenciamento de banco de dados relacional
+              gratuito e de código aberto, utiliza a linguagem SQL.
+            </p>
+          </div>
+
+          <div class="skill-item">
+            <img src="./assets/images/mongo-db.png" alt="Logo MongoDB" />
+            <h4>MongoDB</h4>
+            <p>
+              MongoDB é um banco de dados de documentos não-relacional, de código aberto, que oferece flexibilidade, escalabilidade e desempenho para aplicações modernas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="section-container bg-projects" id="projetos">
+      <div class="section-content">
+        <h2 class="section-title color-white">Projetos</h2>
+
+        <div class="projects-content">
+          <div class="projects-item">
+            <!-- imagem -->
+            <img src="./assets/images/to-do-list.png" alt="Lista de Tarefas" />
+
+            <!-- titulo - texto -->
+            <div class="project-text">
+              <h3>Lista de Tarefas</h3>
+              <p>
+                Se trata de uma lista de tarefas usando a biblioteca do React,
+                com CRUD completo e deploy do back-end no Render e o front-end
+                no Vercel.
+              </p>
+              <a
+                href="https://lucasvilela91-to-do-list.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="tag-a-button"
+              >
+                Experimente
+              </a>
+            </div>
+          </div>
+
+          <div class="projects-item">
+            <!-- imagem -->
+            <img
+              src="./assets/images/jogo-adivinhacao.png"
+              alt="Jogo de adivinhação"
+            />
+
+            <!-- titulo - texto -->
+            <div class="project-text">
+              <h3>Jogo de Adivinhação</h3>
+              <p>
+                Neste projeto, desenvolvi um jogo desde o início, utilizando
+                HTML, CSS, JavaScript e reconhecimento de voz. O objetivo deste
+                jogo é acertar um número de 1 a 1000, falando o número desejado.
+                Jogue agora clicando no botão abaixo. Ative o som e microfone!
+              </p>
+              <a
+                href="https://numerosecretolucasvilela.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="tag-a-button"
+              >
+                Jogue
+              </a>
+            </div>
+          </div>
+
+          <div class="projects-item">
+            <!-- imagem -->
+            <img src="./assets/images/fokus.png" alt="Projeto Fokus" />
+
+            <!-- titulo - texto -->
+            <div class="project-text">
+              <h3>Fokus</h3>
+              <p>
+                Projeto Fokus utiliza a técnica Pomodoro para otimizar o foco
+                durante os estudos. Além disso, o projeto possui uma lista de
+                tarefas integrada com várias funcionalidades, incluindo a
+                possibilidade de adicionar novas tarefas, selecionar a tarefa em
+                andamento, limpar tarefas concluídas, remover todas as tarefas e
+                editar tarefas existentes.
+              </p>
+              <a
+                href="https://fokusaprimoradolucasvilela.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="tag-a-button"
+              >
+                Experimente
+              </a>
+            </div>
+          </div>
+
+          <div class="projects-item">
+            <!-- imagem -->
+            <img src="./assets/images/jogo-da-velha.png" alt="Jogo da velha" />
+
+            <!-- titulo - texto -->
+            <div class="project-text">
+              <h3>Jogo da Velha</h3>
+              <p>
+                Este é um jogo da velha interativo desenvolvido com HTML, CSS e
+                JavaScript, feito usando lógica de programação e uma experiência
+                de usuário divertida.
+              </p>
+              <a
+                href="https://jogo-da-velha-lucas-vilela.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="tag-a-button"
+              >
+                Jogue
+              </a>
+            </div>
+          </div>
+
+          <div class="projects-item">
+            <!-- imagem -->
+            <img src="./assets/images/newsletter.png" alt="Projeto newsletter" />
+
+            <!-- titulo - texto -->
+            <div class="project-text">
+              <h3>Newsletter da Alura</h3>
+              <p>
+                Um site responsivo que simula a tela de inscrição na newsletter
+                da Alura, um serviço destinado a fornecer informações e
+                novidades sobre o universo tech. Este projeto foi desenvolvido
+                utilizando Tailwind CSS, garantindo um design moderno e
+                altamente personalizável.
+              </p>
+              <a
+                href="https://tailwind-newsletter-lucasvilela.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="tag-a-button"
+              >
+                Veja
+              </a>
+            </div>
+          </div>
+
+          <div class="projects-item">
+            <!-- imagem -->
+            <img src="./assets/images/mobile-fist.png" alt="Projeto mobile fist" />
+
+            <!-- titulo - texto -->
+            <div class="project-text">
+              <h3>Mobile Fist: AluraBooks</h3>
+              <p>
+                Site de livros com foco em dispositivos móveis, utilizando HTML,
+                CSS, Flexbox, Media Queries e o plugin Swiper para o carrossel.
+                O layout foi criado com a abordagem Mobile First, garantindo uma
+                experiência responsiva e otimizada. Implementei também um menu
+                hambúrguer para facilitar a navegação, tornando o site simples e
+                intuitivo.
+              </p>
+              <a
+                href="https://mobilefirstlucasvilela.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="tag-a-button"
+              >
+                Veja
+              </a>
+            </div>
+          </div>
+
+          <div class="projects-item">
+            <!-- imagem -->
+            <img src="./assets/images/code-connect.png" alt="Projeto code connect" />
+
+            <!-- titulo - texto -->
+            <div class="project-text">
+              <h3>Code Connect</h3>
+              <p>
+                Este projeto foi para colocar em prática conceitos de
+                assincronicidade, como promises, async e await, blocos
+                try…catch, e funcionalidades de JavaScript que conseguem
+                executar algo após determinado tempo, como o setTimeout().A
+                primeira coluna é a parte onde podemos fazer o upload de uma
+                imagem de prévia do projeto. Podemos testar essa funcionalidade
+                clicando no botão "Carregar imagem" e selecionando um arquivo.
+                Ao fazer isso, a imagem do projeto é atualizada pela que
+                escolhemos no computador.
+              </p>
+              <a
+                href="https://code-connect-lucasvilela.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="tag-a-button"
+              >
+                Experimente
+              </a>
+            </div>
+          </div>
+
+          <div class="projects-item">
+            <!-- imagem -->
+            <img src="./assets/images/amigo-secreto.png" alt="Projeto amigo secreto" />
+
+            <!-- titulo - texto -->
+            <div class="project-text">
+              <h3>Amigo Secreto</h3>
+              <p>
+                Se trata de um sorteador de nomes, feito para o amigo secreto,
+                permite adicionar amigos a uma lista, realizar sorteios de pares
+                entre eles e reiniciar a lista. A aplicação padroniza os nomes
+                dos amigos para maiúsculas e evita a adição de nomes repetidos.
+              </p>
+              <a
+                href="https://amigo-secreto-lucasvilela.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="tag-a-button"
+              >
+                Experimente
+              </a>
+            </div>
+          </div>
+
+          <div class="projects-item">
+            <!-- imagem -->
+            <img src=".//assets/images/ingresso.png" alt="Projeto compra de ingresso" />
+
+            <!-- titulo - texto -->
+            <div class="project-text">
+              <h3>Compra de Ingressos</h3>
+              <p>
+                Simulação de compra de ingressos para diferentes setores de um
+                evento, utilizando JavaScript, HTML e CSS. O usuário pode
+                selecionar o tipo de ingresso desejado (Pista, Superior ou
+                Inferior) e definir a quantidade. O sistema verifica a
+                disponibilidade em tempo real antes de concluir a compra,
+                garantindo praticidade e eficiência no processo.
+              </p>
+              <a
+                href="https://ingresso-lucasvilela.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="tag-a-button"
+              >
+                Experimente
+              </a>
+            </div>
+          </div>
+
+          <div class="projects-item">
+            <!-- imagem -->
+            <img src="./assets/images/alugames.png" alt="Projeto alugames" />
+
+            <!-- titulo - texto -->
+            <div class="project-text">
+              <h3>Alugames</h3>
+              <p>
+                Sistema de locação de jogos que permite aos usuários gerenciar o
+                status dos jogos de forma prática e intuitiva. A principal
+                funcionalidade do projeto é a alternância de status dos jogos,
+                possibilitando que o usuário alterne entre as opções "Alugar" e
+                "Devolver" com um simples clique em um botão.
+              </p>
+              <a
+                href="https://alugames-lucasvilela.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="tag-a-button"
+              >
+                Experimente
+              </a>
+            </div>
+          </div>
+
+          <div class="projects-item">
+            <!-- imagem -->
+            <img src="./assets/images/landing-page.png" alt="Landing page Aluraplus" />
+
+            <!-- titulo - texto -->
+            <div class="project-text">
+              <h3>Landing Page da AluraPlus</h3>
+              <p>
+                Landing page criada para praticar HTML e CSS, voltada para
+                promover os serviços da AluraPlus. Seu objetivo principal é
+                converter visitantes em clientes, destacando-se pelo design
+                atraente e pela comunicação persuasiva para chamar a atenção dos
+                usuários.
+              </p>
+              <a
+                href="https://alurapluslucasvilela.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="tag-a-button"
+              >
+                Veja
+              </a>
+            </div>
+          </div>
+
+          <div class="projects-item">
+            <!-- imagem -->
+            <img src="./assets/images/sorteador.png" alt="Projeto sorteador" />
+
+            <!-- titulo - texto -->
+            <div class="project-text">
+              <h3>Sorteador de Números</h3>
+              <p>
+                Jogo de sorteio de números desenvolvido em JavaScript, no qual o
+                usuário define a quantidade de números a serem sorteados e o
+                intervalo desejado. Os números sorteados são exibidos
+                dinamicamente na tela em ordem crescente, proporcionando uma
+                experiência interativa e personalizada.
+              </p>
+              <a
+                href="https://sorteadorlucasvilela.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="tag-a-button"
+              >
+                Experimente
+              </a>
+            </div>
+          </div>
+
+          <div class="projects-item">
+            <!-- imagem -->
+            <img
+              src="./assets/images/previsao-do-tempo.png"
+              alt="Projeto previsão do tempo"
+            />
+
+            <!-- titulo - texto -->
+            <div class="project-text">
+              <h3>Previsão do Tempo</h3>
+              <p>
+                É um projeto de previsão do tempo mockado, onde as informações
+                meteorológicas são exibidas de forma fixa, sem integração com
+                APIs externas ou uso de JavaScript. O foco principal foi a
+                criação de uma interface amigável e a responsividade para
+                dispositivos móveis utilizando @media queries no CSS.
+              </p>
+              <a
+                href="https://previsao-do-tempo-lucasvilela.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="tag-a-button"
+              >
+                Veja
+              </a>
+            </div>
+          </div>
+
+          <div class="projects-item">
+            <!-- imagem -->
+            <img src="./assets/images/dark-mode.png" alt="Projeto dark mode" />
+
+            <!-- titulo - texto -->
+            <div class="project-text">
+              <h3>Dark Mode</h3>
+              <p>
+                Esse projeto implementa a alternância entre os temas claro e
+                escuro de uma página. A funcionalidade é acionada por meio de um
+                evento, utilizando o addEventListener para detectar interações
+                do usuário. O método .toggle é utilizado para alternar uma
+                classe CSS, que aplica os estilos necessários para o modo
+                escuro.
+              </p>
+              <a
+                href="https://darkmodelucasvilela.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="tag-a-button"
+              >
+                Veja
+              </a>
+            </div>
+          </div>
+
+          <div class="projects-item">
+            <!-- imagem -->
+            <img src="./assets/images/low-code.png" alt="Projeto low code" />
+
+            <!-- titulo - texto -->
+            <div class="project-text">
+              <h3>Primeiro Site em Low Code</h3>
+              <p>
+                Este projeto foi desenvolvido com a tecnologia Bubble, uma
+                plataforma low-code que permite criar aplicativos web com pouco
+                ou nenhum código. Utilizando essa ferramenta, construí meu
+                primeiro site, o que foi uma ótima experiência para aprender
+                sobre design e funcionalidade sem a necessidade de codificação
+                extensiva.
+              </p>
+              <a
+                href="https://lucasvilelapersonal.bubbleapps.io/version-test"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="tag-a-button"
+              >
+                Veja
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-container bg-gray" id="contatos">
+      <div class="section-content">
+        <h2 class="section-title">Entre em contato</h2>
+
+        <form class="contact-form bg-white" action="https://formsubmit.co/lucasvilelapersonal@gmail.com" method="POST">
+          <label for="nome" class="form-label">Nome*</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Nome"
+            required
+            class="input-field"
+          />
+
+          <label for="email" class="form-label">Email*</label>
+          <input
+            type="email"
+            name=""
+            id="email"
+            placeholder="Email"
+            required
+            class="input-field"
+          />
+
+          <label for="telefone" class="form-label">Celular</label>
+          <input
+            class="input-field"
+            maxlength="256"
+            name="telefone"
+            data-name="Telefone"
+            placeholder="+55 (xx) 12345-6789"
+            type="tel"
+            id="telefone"
+          />
+
+          <label for="motivo-do-contato" class="form-label"
+            >Motivo do contato*</label
+          >
+          <select
+            id="motivo-do-contato"
+            name="motivo-do-contato"
+            data-name="Motivo Do Contato"
+            required=""
+            class="input-field"
+          >
+            <option value="">Selecione um</option>
+            <option value="Quero contratar você">Quero contratar você</option>
+            <option value="Duvidas">Duvídas</option>
+            <option value="Outro motivo">Outro motivo</option>
+          </select>
+
+          <div class="form-label">Como prefere ser contatado?*</div>
+
+          <label>
+            <input type="radio" name="option" value="WhatsApp" required />
+            WhatsApp </label
+          ><br />
+
+          <label>
+            <input type="radio" name="option" value="Email" required /> Email
+          </label>
+
+          <label for="mensagem" class="form-label mensagem">Mensagem*</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            maxlength="5000"
+            data-name="Mensagem"
+            placeholder="Descreva com detalhes sua mensagem"
+            required=""
+            class="input-field"
+            spellcheck="false"
+          ></textarea>
+          
+          <input type="hidden" name="_captcha" value="false">
+
+          <input type="hidden" name="_next" value="http://lucasvilela.vercel.app/thanks-pt.html">
+
+          <input type="submit" class="button" value="Enviar" />
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-container">
+      <div class="logo">
+        <img src="./assets/svg/logo-gray.svg" alt="Logo" />
+      </div>
+      
+      <ul class="icons-footer">  
+      </li>
+          <li><a href="https://www.instagram.com/lucasvilelapersonal"
+            target="_blank"
+            rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram instagram"></i></a>
+          <li>
+            <a href="https://api.whatsapp.com/send?phone=5535991463033"
+            target="_blank"
+            rel="noopener noreferrer"><i class="fa-brands fa-whatsapp whatsapp"></i></a></li>
+          <li>
+            <a  href="https://github.com/lucasvilela91"
+            target="_blank"
+            rel="noopener noreferrer">
+            <i class="fa-brands fa-github github"></i></a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/lucasfreitasvilela"
+          target="_blank"
+          rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin github"></i></a></li>
+      </ul>
+      <p>&copy;<span id="currentYear"></span> - Lucas Vilela. Todos os direitos reservados.</p>
+</p> 
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks!</title>
+    <link rel="stylesheet" href="./css/thanks.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Inter:opsz,wght@14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+</head>
+<body>
+    <nav class="fixed-header">
+    <div class="logo">
+      <img src="./assets/svg/logo.svg" alt="Logo" />
+  </nav>
+
+  <div class="showcase-container">
+    <div class="showcase-container-box">
+      <h1>
+        Message sent!
+      </h1>
+      <p>
+        Thank you for contacting us. We will return your message shortly.
+      </p>
+    </div>
+  </div>
+  <script>
+    const logos = document.querySelectorAll('.logo img'); 
+
+logos.forEach((logo) => {
+  logo.addEventListener('click', function () {
+    window.location.href = '../index.html'; 
+  });
+});
+  </script>
+</body>
+</html>
+
+
+
+

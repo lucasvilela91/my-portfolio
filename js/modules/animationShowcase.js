@@ -1,6 +1,6 @@
 // modules/animation.js
 
-const texts = [
+const textsPt = [
   'Inovação.',
   'Agilidade.',
   'Criatividade.',
@@ -8,6 +8,21 @@ const texts = [
   'Colaboração.',
   'Expertise.',
 ];
+
+const textsEn = [
+  'Innovation.',
+  'Agility.',
+  'Creativity.',
+  'Quality.',
+  'Collaboration.',
+  'Expertise.',
+];
+
+// Verifica se está na página em português ou inglês
+const texts = window.location.pathname.includes('index-pt.html')
+  ? textsPt
+  : textsEn;
+
 let i = 0;
 
 export function typeAndBackspace(textElement) {
