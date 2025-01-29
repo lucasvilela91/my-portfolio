@@ -5,10 +5,10 @@ export function reloadLogo() {
     logo.addEventListener('click', function () {
       const currentPage = window.location.pathname;
 
-      if (currentPage.endsWith('index.html')) {
-        window.location.href = 'index.html'; // Recarrega a página
+      if (currentPage.endsWith('index-en.html')) {
+        window.location.href = 'index-en.html'; // Recarrega a página
       } else {
-        window.location.href = 'index-en.html'; // Redireciona para a versão em inglês
+        window.location.href = 'index.html'; // Redireciona para a versão em inglês
       }
     });
   });
