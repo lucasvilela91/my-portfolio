@@ -3,7 +3,13 @@ export function reloadLogo() {
 
   logos.forEach((logo) => {
     logo.addEventListener('click', function () {
-      window.location.href = '../index.html'; // Recarrega a página
+      const currentPage = window.location.pathname;
+
+      if (currentPage.endsWith('index.html')) {
+        window.location.href = 'index.html'; // Recarrega a página
+      } else {
+        window.location.href = 'index-en.html'; // Redireciona para a versão em inglês
+      }
     });
   });
 }
