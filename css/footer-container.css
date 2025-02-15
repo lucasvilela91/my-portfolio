@@ -95,7 +95,7 @@
 .icons-footer li:hover a::before {
   height: 100%;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1450px) {
   .footer-container {
     flex-direction: column;
     padding: 80px;
