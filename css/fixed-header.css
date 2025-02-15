@@ -86,7 +86,7 @@
   transform: scale(1.1);
 }
 
-@media (max-width: 1157px) {
+@media (max-width: 1200px) {
   .fixed-header {
     display: flex;
     align-items: center;
@@ -99,7 +99,7 @@
   }
 
   .fixed-header .logo img {
-    margin-left: 0;
+    margin-left: 100px;
   }
   .showcase-container {
     display: flex;
