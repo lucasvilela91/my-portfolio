@@ -81,5 +81,11 @@
       text-align: justify;
       margin-left: 0;
     }
+    .about-me-content h3 {
+      margin-top: 2rem;
+    }
+    .about-me-content ul {
+      margin-top: 1.4rem
+    }
 }
   
