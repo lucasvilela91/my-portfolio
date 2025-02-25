@@ -37,6 +37,13 @@
     max-width: 800px;
     text-align: justify;
   }
+
+  .about-me-content h3 {
+    margin: 1.2rem 0;
+  }
+  .about-me-content ul {
+    margin-top: 1.4rem
+  }
   
   @media (max-width: 1260px) {
     .about-me-content {
@@ -80,12 +87,6 @@
       margin-top: 20px;
       text-align: justify;
       margin-left: 0;
-    }
-    .about-me-content h3 {
-      margin-top: 2rem;
-    }
-    .about-me-content ul {
-      margin-top: 1.4rem
     }
 }
   
