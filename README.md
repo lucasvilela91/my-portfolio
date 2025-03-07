@@ -1,11 +1,12 @@
 # Meu Site Pessoal
 
+Este é o meu site pessoal desenvolvido com HTML, CSS e JavaScript. O projeto foi estruturado de maneira organizada, utilizando módulos para garantir um código limpo e de fácil manutenção.
+
+
 
 ![imagem-portifolio](https://github.com/user-attachments/assets/7045f440-8bbd-4174-a0b6-dea11a4f6733)
 
 
-
-Este é o meu site pessoal desenvolvido com HTML, CSS e JavaScript. O projeto foi estruturado de maneira organizada, utilizando módulos para garantir um código limpo e de fácil manutenção.
 
 ## Tecnologias Utilizadas
 
